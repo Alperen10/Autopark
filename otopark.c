@@ -12,14 +12,12 @@ struct Giris{
 	char saat[10];
 };
 
-
 int giriskapasite[10];
 int kapasite[1000];
 
 void AracEkle(struct Arac kapasite[1000],struct Giris giriskapasite[10]){
 	int i;
 	for(i=1;i<=5;i++){
-
 	
 		printf("Lutfen aracinizin giris yaptigi saati belirtin:");
 		scanf("%s",giriskapasite[i].saat);
@@ -29,16 +27,9 @@ void AracEkle(struct Arac kapasite[1000],struct Giris giriskapasite[10]){
 		scanf("%s",kapasite[i].model);
 		printf("Lutfen aracinizin rengini girin:");
 		scanf("%s",kapasite[i].renk);
-		
-	
-		
 	
 		printf("\n<---------------------->\n\n");
-
-		
 	}
-	
-	
 }
 void AracListele(struct Arac kapasite[1000],struct Giris giriskapasite[10]){
 	int i;
@@ -49,11 +40,7 @@ void AracListele(struct Arac kapasite[1000],struct Giris giriskapasite[10]){
 		printf("Plaka:%s\n",kapasite[i].plaka);
 		printf("Model:%s\n",kapasite[i].model);
 		printf("Renk:%s\n\n",kapasite[i].renk);
-		
-
-		
 	}
-	
 }
 
 int main(){
@@ -64,7 +51,6 @@ int main(){
 	AracEkle(arac_test,saat);
 	AracListele(arac_test,saat);
 	
-
 	return 0;
 	
 }
